@@ -13,14 +13,24 @@ export const Game = (): React.ReactElement => {
       return;
     }
 
+    // fill each cell of the appropriate row with the letter
     console.log(word);
   };
 
   return (
-    <main className="border flex flex-col items-center">
-      <section className="h-[600px]">{word}</section>
+    <main className="w-9/12 xl:w-[1145px] mx-auto my-0 flex flex-col items-center">
+      <section className="">{word}</section>
 
-      <form onSubmit={handleWordSubmit} className="h-12">
+      <section className="grid grid-rows-6 grid-cols-5 gap-2">
+        {Array.from({ length: 30 }).map((_, index) => (
+          <div
+            key={index}
+            className="w-24 h-24 border border-slate-300 rounded"
+          ></div>
+        ))}
+      </section>
+
+      <form onSubmit={handleWordSubmit} className="h-12 mt-12">
         <input
           type="text"
           value={word}

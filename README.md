@@ -1,6 +1,6 @@
 # 🧩 Wordle Game
 
-Building a wordle game. In progress.
+👩‍🔧 Building in progress...
 
 
 ## 🚀 How to play
