@@ -1,7 +1,8 @@
 import React from "react";
 
-// type ComponentTemplateProps = {};
-
+/**
+ * A template for a new component.
+ */
 export const ComponentTemplate = (): React.ReactElement => {
   return <>As fresh as you can be</>;
 };
