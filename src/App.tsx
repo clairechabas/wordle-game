@@ -1,7 +1,22 @@
+import React from "react";
 import logo from "./assets/logo.png";
 import { Game } from "./components/Game";
+import { getRandomWordToFind } from "./utils/wordsToFind";
+import { WordMap } from "./utils/types";
 
 function App() {
+  const [wordOfGame, setWordOfGame] = React.useState<WordMap | null>(null);
+
+  /**
+   * Set the word of the game when page loads.
+   *
+   * Later, this will be set on the "Start game" button press.
+   */
+  React.useEffect(() => {
+    const word = getRandomWordToFind();
+    setWordOfGame(word);
+  }, []);
+
   return (
     <div className="mx-auto my-0">
       <header className="w-full h-16 flex items-center mb-12 border-b">
@@ -11,7 +26,7 @@ function App() {
         </div>
       </header>
 
-      <Game />
+      {wordOfGame ? <Game word={wordOfGame} /> : <p>Loading...</p>}
     </div>
   );
 }
