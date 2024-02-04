@@ -17,7 +17,8 @@ bun run dev
 ```
 
 ## 👩‍💻 Coming up
-- Tests w/ Vitest
+- Unit tests w/ Vitest
+- Integration/E2E tests w/ Playwright
 - CI w/ Github Actions
 - Deploy w/ Netlify or Vercel
 - Generate 5-letter random words from WordNet open source words database
