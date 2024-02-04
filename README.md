@@ -21,6 +21,7 @@ bun run dev
 - CI w/ Github Actions
 - Deploy w/ Netlify or Vercel
 - Generate 5-letter random words from WordNet open source words database
+- Make UI fully responsive
 - Language picker: EN | FR | ...
 - Theme picker:
   - [Glass](https://dribbble.com/shots/17523579-Wordle-ART-Version)
