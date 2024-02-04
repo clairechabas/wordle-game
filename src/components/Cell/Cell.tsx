@@ -18,9 +18,8 @@ export const Cell = ({
   letter: string;
   status: LetterStatus;
 }): React.ReactElement => {
-  console.log("letter, status", letter, status, STATUS_COLOR[status]);
   const statusColor = STATUS_COLOR[status];
-  const classNames = `w-24 h-24 border rounded flex justify-center items-center font-bold text-4xl text-white ${statusColor}`;
+  const classNames = `w-24 h-24 border border-slate-300 rounded flex justify-center items-center font-bold text-4xl text-white ${statusColor}`;
 
   return <div className={classNames}>{letter}</div>;
 };

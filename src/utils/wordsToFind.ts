@@ -1,16 +1,16 @@
+import { WordMap } from "./types";
+
 /**
  * Get the word to find for a game.
  */
 export function getRandomWordToFind(): WordMap {
   const randomIndex = Math.floor(Math.random() * wordsToFind.length);
   const word = wordsToFind[randomIndex].toUpperCase();
-  const wordMap = new Map();
+  const wordMap = {} as WordMap;
 
   for (let i = 0; i < word.length; i++) {
-    wordMap.set(word[i], i);
+    wordMap[i] = word[i];
   }
-
-  console.log("Word to find:", wordMap);
 
   return wordMap;
 }

@@ -1,4 +1,6 @@
-export type WordMap = Map<string, number>;
+export type WordMap = {
+  [position: number]: string;
+};
 
 export type LetterStatus = "correct" | "misplaced" | "wrong" | "undefined";
 
