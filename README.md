@@ -16,19 +16,19 @@ bun install
 bun run dev
 ```
 
-## 👩‍💻 Coming up
+## 💡 Improvements ideas
 - Unit tests w/ Vitest
 - Integration/E2E tests w/ Playwright
+- Browser tests with Argos
 - CI w/ Github Actions
 - Deploy w/ Netlify or Vercel
-- Generate 5-letter random words from WordNet open source words database
-- Make UI fully responsive
-- Language picker: EN | FR | ...
+- Generate 5-letter random words from WordNet open source words or other database
+- Fully responsive UI
 - Theme picker:
   - [Glass](https://dribbble.com/shots/17523579-Wordle-ART-Version)
   - [Square](https://dribbble.com/shots/17534266-Wordle)
   - [Space](https://dribbble.com/shots/17523886-WORDLE-Space-edition-2022)
-  - [Old School](https://dribbble.com/shots/17553045-Wordle-Redesign)
+  - [Classic](https://dribbble.com/shots/17335005-Wordle-Redesign)
   - [Vibrant](https://dribbble.com/shots/17516876-Wordle-Redesign-Weekly-Warm-Up)
   - [Game Boy](https://dribbble.com/shots/17440900-WORDLE-gameboy-UI-kit)
 - Keyboard UI with letter visual validation
